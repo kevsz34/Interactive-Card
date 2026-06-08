@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Card</title>
+</head>
+<body>
+    <div id="backgColored">
+       
+        <section id="cardFront">
+            <img src="images/card-logo.svg" alt="card logo">
+
+            <h1 id="resCardN">0000 0000 0000 0000</h1>
+
+            <section id="resInfo">
+                <h2 id="resCardH">JANE APPLESEED</h2>
+
+                <div id="resExpD">
+                    <h2 id="resExpM">00</h2>
+                    <h2>/</h2>
+                    <h2 id="resExpY">00</h2>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="cardBack">
+            <h2 id="resCVC">000</h2>
+        </section>
+
+    </div>
+
+    <div id="backgNormal">
+       <form action="get">
+
+        <section class="inpSect cardH">
+            <label for="cardHInp">CARDHOLDER NAME</label>
+            <input type="text" name="cardHInp" id="cardHInp" placeholder="e.g. Jane Appleseed" required>
+            <p class="pError displayN"></p>
+        </section>
+
+        <section class="inpSect cardN">
+            <label for="cardNInp">CARD NUMBER</label>
+            <input type="text" name="cardNInp" id="cardNInp" placeholder="e.g. 1234 5678 9123 0000"  required>
+            <p class="pError displayN"></p>
+        </section>
+
+        <section class="inpSect exp">
+            <label for="expInp">EXP. DATE (MM/YY)</label>
+
+            <div class="containerExp">
+                <input type="number" name="expInp" id="expMInp" placeholder="MM" required>
+                <input type="number" name="expInp" id="expYInp" placeholder="YY" required>
+            </div>
+            <p class="pError displayN"></p>
+        </section>
+
+        <section class="inpSect cvc">
+            <label for="cvcInp">CVC</label>
+            <input type="number" name="cvcInp" id="cvcInp" placeholder="e.g. 123" required>
+            <p class="pError displayN"></p>
+        </section>
+
+        <button type="button" onclick="enter()">Confirm</button>
+
+       </form>
+       <section id="layoutConc">
+        <img src="images/icon-complete.svg" alt="">
+        <h2>THANK YOU!</h2>
+        <p>We've added your card details</p>
+        <button type="button">Continue</button>
+       </section>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
