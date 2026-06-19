@@ -192,9 +192,6 @@ function enter(){
      }
 }
     
-//TENHO Q REMVOER FOREACH INPUT UM  input.removeAttribute('aria-invalid');
-//DPS EM CADA ERRO E NO SEU RESPECTIVO INPUT  aria-invalid="true" 
- 
 
 
   
