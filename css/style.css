@@ -9,7 +9,6 @@
 
 :root{
 /*Primary*/
---linear-gradient : hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
 --red-400: hsl(0, 100%, 66%);
 
 /*Neutral*/
@@ -36,13 +35,13 @@
     }
     #backgColored{
         position: relative;
-        background-image: url(images/bg-main-desktop.png);
+        background-image: url(../images/bg-main-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 30%;
     }
     #cardFront{
-        background: url(images/bg-card-front.png);
+        background: url(../images/bg-card-front.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 26rem;
@@ -71,7 +70,7 @@
     }
 
 #cardBack{
-        background: url(images/bg-card-back.png);
+        background: url(../images/bg-card-back.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -211,7 +210,7 @@
     }
         #backgColored{
         position: relative;
-        background-image: url(images/bg-main-mobile.png);
+        background-image: url(../images/bg-main-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
